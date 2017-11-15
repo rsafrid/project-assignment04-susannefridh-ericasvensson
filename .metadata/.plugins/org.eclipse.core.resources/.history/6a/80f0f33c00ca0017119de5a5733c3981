@@ -1,0 +1,14 @@
+package com.example.maven.project_exercise_019;
+
+import com.example.maven.project_excersise_019.MyRandomMethods;
+
+public class Main {
+	public static void main(String[] args) {
+		MyRandomMethods mrm = new MyRandomMethods();
+		System.out.println("Between 1 and 10: "+mrm.randomBetween1And10());
+		System.out.println("Between 11 and 20: "+mrm.randomBetween11And20());
+		System.out.println("Between 21 and 30: "+mrm.randomBetween21And30());
+		System.out.println("Between 31 and 40: "+mrm.randomBetween31And40());
+		System.out.println("Between 41 and 50: "+mrm.randomBetween41And50());
+	}
+}

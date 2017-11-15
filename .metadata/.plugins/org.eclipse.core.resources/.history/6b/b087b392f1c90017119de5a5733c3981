@@ -1,0 +1,8 @@
+package com.example.maven.project_excersise_019;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+	}
+}

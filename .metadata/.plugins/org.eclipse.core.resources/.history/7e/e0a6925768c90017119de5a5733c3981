@@ -1,0 +1,59 @@
+package com.assignment_4.subclasses;
+
+import java.util.ArrayList;
+
+import com.assignment_4.superclasses.BankAccount;
+import com.assignment_4.superclasses.Human;
+
+public class BankCustomer extends Human {
+	ArrayList<BankAccount> customerAccount = new ArrayList <BankAccount>(); // Stämmer denna rad?
+
+	
+	public BankCustomer(String name, int age) {  // Stämmer denna rad?
+		super(name, age);
+		
+	}
+
+
+	public ArrayList<BankAccount> getCustomerAccounts() {
+		return customerAccount;
+	}
+
+
+	public void setCustomerAccounts(ArrayList<BankAccount> customerAccounts) {
+		this.customerAccount = customerAccounts;
+	}
+	
+	public void addAccount(BankAccount bankAccount) {  //Stämmer denna rad?
+		this.customerAccount.add(bankAccount);
+	}
+	
+	public void depositToAccount(String accountNumber, double amount) {
+		for (int i = 0; i < customerAccount.size(); i++) {
+			if (customerAccount.get(i).getAccountNumber().equals(accountNumber)) {
+				customerAccount.get(i).depositMoney(amount);
+			}
+		}
+	}
+	
+	public void withdrawFromAccount(String accountNumber, double amount) {
+		for (int i = 0; i < customerAccount.size(); i++) {
+			if (customerAccount.get(i).getAccountNumber().equals(accountNumber)) {
+				customerAccount.get(i).withdrawMoney(amount);
+				}
+		}
+	}
+
+	@Override
+	public String toString() {
+		/** return "Customer [customerAccounts=" + customerAccounts + ", getCustomerAccounts()=" + getCustomerAccounts()
+				+ ", getName()=" + getName() + ", getAge()=" + getAge() + ", getClass()=" + getClass() + ", hashCode()="
+				+ hashCode() + ", toString()=" + super.toString() + "]"; */
+		
+		return "Customer: " + getName() + ", ålder: " + getAge();
+	}
+	
+	
+}
+	
+

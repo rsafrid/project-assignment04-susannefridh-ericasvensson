@@ -1,0 +1,20 @@
+package com.example.maven.project_excersise_019;
+
+import java.util.Random;
+
+public class MyRandomMethods {
+	Random random = new Random();
+	
+	public int randomBetween1And10() {
+		int result = 0;
+		result = random.nextInt(10) + 1;
+		return result;
+	}
+	
+	public int randomBetween11And20() {
+		int result = 0;
+		result = random.nextInt(10) + 11;
+		return result;
+	}
+
+}

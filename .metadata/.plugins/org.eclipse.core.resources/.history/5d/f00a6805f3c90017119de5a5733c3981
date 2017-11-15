@@ -1,0 +1,14 @@
+package com.example.maven.project_excersise_019;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class MyRandomMethodsTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

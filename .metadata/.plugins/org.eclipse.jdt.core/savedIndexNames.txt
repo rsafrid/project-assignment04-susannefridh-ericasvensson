@@ -1,0 +1,2 @@
+INDEX VERSION 1.130+/home/susanne/eclipse-workspace/project-assignment04-susannefridh-ericasvensson/.metadata/.plugins/org.eclipse.jdt.core
+1932949083.index

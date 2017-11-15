@@ -1,0 +1,9 @@
+package com.example.maven.project_excersise_019;
+
+public class Main {
+
+	public static void main(String[] args) {
+		MyRandomMethods mrm = new MyRandomMethods();
+		System.out.println("Between 1 and 10: "+mrm.randomBetween1And10());
+	}
+}

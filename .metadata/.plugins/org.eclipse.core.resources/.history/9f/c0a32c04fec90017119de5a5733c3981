@@ -1,0 +1,28 @@
+package com.example.maven.project_excersise_019;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class MyRandomMethodsTest {
+	MyRandomMethods mrm = new MyRandomMethods();
+
+	@Test
+	public void testRandomBetween1And10() {
+		int value = mrm.randomBetween1And10();
+		assertTrue((value >=1) && (value <=10));
+	}
+
+	@Test
+	public void testRandomBetween11And20() {
+		int value = mrm.randomBetween11And20();
+		assertTrue((value >=11) && (value <=20));
+	}
+
+	@Test
+	public void testRandomBetween21And30() {
+		int value = mrm.randomBetween21And30();
+		assertTrue((value >=11) && (value <=20));
+	}
+	
+}
